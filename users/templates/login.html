@@ -1,0 +1,11 @@
+<html>
+    <form method="post" autocomplete="off">
+        {% csrf_token %}
+
+        {{loginform.as_p}}
+        <input type="submit" value="Ingresar">
+    </form>
+    <form action="/register">
+        <input type="submit" value="Registrar">
+    </form>
+</html>

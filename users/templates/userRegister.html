@@ -1,0 +1,11 @@
+<html>
+    <form method="post" autocomplete="off">
+        {% csrf_token %}
+
+        {{registerform.as_p}}
+        <input type="submit" value="Registrar">
+    </form>
+    <form action="/login">
+        <input type="submit" value="Cancelar">
+    </form>
+</html>
